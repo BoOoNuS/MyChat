@@ -18,9 +18,9 @@ public class Client {
     public static void main(String[] args) {
         System.out.print("Enter your name: ");
         String name = SCANNER.next();
-        Socket socket = null;
-        DataOutputStream dos = null;
-        InputStream is = null;
+        Socket socket;
+        DataOutputStream dos;
+        InputStream is;
         String message;
         try {
             socket = new Socket("localhost", 8888);
